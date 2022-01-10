@@ -2,7 +2,10 @@ import Layout from "../../components/Layout";
 
 const post = ({data}) => {
     return (
-        <Layout>
+        <Layout
+        title={`${data.title}`}
+        description={`${data.description}`}
+        >
             <h1>{data.id} - {data.title}</h1>
             <p>{data.body}</p>
         </Layout>
